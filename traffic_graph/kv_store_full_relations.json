@@ -1,0 +1,430 @@
+{
+  "doc-f6b013e82a8739d5dec53b5d7c266dd1": {
+    "relation_pairs": [
+      [
+        "Density",
+        "TimeLoss"
+      ],
+      [
+        "Causal Inferences",
+        "short-term events"
+      ],
+      [
+        "Teleported",
+        "Vaporized"
+      ],
+      [
+        "SampledSeconds",
+        "vehicles per second"
+      ],
+      [
+        "Departed",
+        "TimeLoss"
+      ],
+      [
+        "laneDensity",
+        "waitingTime"
+      ],
+      [
+        "Edge-Level Metrics",
+        "lane_vehicle_count"
+      ],
+      [
+        "Average Vehicle Length vs Edge Length",
+        "OverlapTraveltime"
+      ],
+      [
+        "sampledSeconds",
+        "waitingTime"
+      ],
+      [
+        "Edge-Level Metrics",
+        "edge_total_vehicle_count"
+      ],
+      [
+        "Arrived",
+        "Edge<Lane"
+      ],
+      [
+        "Departed",
+        "Peak Hours"
+      ],
+      [
+        "speedRelative",
+        "waitingTime"
+      ],
+      [
+        "Density",
+        "Lane Density"
+      ],
+      [
+        "OverlapTravelTime",
+        "TravelTime"
+      ],
+      [
+        "Anomaly Detection",
+        "Edge-Level Metrics"
+      ],
+      [
+        "density",
+        "sampledSeconds"
+      ],
+      [
+        "Speed",
+        "Speed Relative"
+      ],
+      [
+        "Speed",
+        "Time Loss"
+      ],
+      [
+        "space-mean-speed",
+        "time-mean-speed"
+      ],
+      [
+        "mean speed",
+        "speed"
+      ],
+      [
+        "Extreme Congestion",
+        "High Density/OCCUPANCY"
+      ],
+      [
+        "laneDensity",
+        "laneLength"
+      ],
+      [
+        "DELTA_T",
+        "end"
+      ],
+      [
+        "Departed",
+        "Edge<Lane"
+      ],
+      [
+        "Lane Changed From",
+        "Lane Changed To"
+      ],
+      [
+        "Edge A",
+        "Edge B"
+      ],
+      [
+        "Arrived",
+        "Final Segment"
+      ],
+      [
+        "Density",
+        "Edge/Lane"
+      ],
+      [
+        "edge@id",
+        "lane@id"
+      ],
+      [
+        "entered",
+        "left"
+      ],
+      [
+        "edge_length",
+        "laneLength"
+      ],
+      [
+        "speed",
+        "traveltime"
+      ],
+      [
+        "Greenshields Model",
+        "Speed"
+      ],
+      [
+        "begin",
+        "end"
+      ],
+      [
+        "Lane Changed From",
+        "LaneDensity"
+      ],
+      [
+        "Density",
+        "Sampled Seconds"
+      ],
+      [
+        "Edge-Level Metrics",
+        "Lane-Level Metrics"
+      ],
+      [
+        "Overlap Travel Time",
+        "Speed"
+      ],
+      [
+        "Density",
+        "Total Vehicle-Hours"
+      ],
+      [
+        "SampledSeconds",
+        "TimeLoss"
+      ],
+      [
+        "laneChangedFrom",
+        "laneChangedTo"
+      ],
+      [
+        "TimeLoss",
+        "Waiting Time"
+      ],
+      [
+        "departed",
+        "entered"
+      ],
+      [
+        "SampledSeconds",
+        "WaitingTime"
+      ],
+      [
+        "Lane Changed To",
+        "LaneDensity"
+      ],
+      [
+        "Traffic Conditions",
+        "WaitingTime"
+      ],
+      [
+        "Speed",
+        "TimeLoss"
+      ],
+      [
+        "OverlapTraveltime",
+        "Traveltime"
+      ],
+      [
+        "density",
+        "occupancy"
+      ],
+      [
+        "Operational Traffic Management",
+        "TimeLoss"
+      ],
+      [
+        "Lane Changed From",
+        "Mediation by Speed"
+      ],
+      [
+        "arrived",
+        "departed"
+      ],
+      [
+        "Delta T",
+        "TimeLoss"
+      ],
+      [
+        "Congested Conditions",
+        "Lane-Level Metrics"
+      ],
+      [
+        "Edge-Level Metrics",
+        "Uncongested Conditions"
+      ],
+      [
+        "timeLoss",
+        "waitingTime"
+      ],
+      [
+        "Final Vehicles",
+        "Initial Vehicles"
+      ],
+      [
+        "Edge-Level Metrics",
+        "waitingTime"
+      ],
+      [
+        "Edge-Level Metrics",
+        "laneDensity"
+      ],
+      [
+        "Arrived",
+        "WaitingTime"
+      ],
+      [
+        "Speed",
+        "Travel Time"
+      ],
+      [
+        "LaneDensity",
+        "Traffic Condition"
+      ],
+      [
+        "DELTA_T",
+        "SampledSeconds"
+      ],
+      [
+        "Density",
+        "Occupancy"
+      ],
+      [
+        "OverlapTravelTime",
+        "VehicleLength"
+      ],
+      [
+        "Speed",
+        "Waiting Time"
+      ],
+      [
+        "Waiting Time",
+        "speedThreshold"
+      ],
+      [
+        "teleported",
+        "vaporized"
+      ],
+      [
+        "Average Vehicle Length",
+        "OverlapTraveltime"
+      ]
+    ],
+    "count": 70,
+    "create_time": 1757556610,
+    "update_time": 1757556610,
+    "_id": "doc-f6b013e82a8739d5dec53b5d7c266dd1"
+  },
+  "doc-db8e99d8bf2a91d51e9b79e119cb6f03": {
+    "relation_pairs": [
+      [
+        "overlapTraveltime",
+        "speed"
+      ],
+      [
+        "lane",
+        "occupancy"
+      ],
+      [
+        "begin",
+        "end"
+      ],
+      [
+        "laneDensity",
+        "left"
+      ],
+      [
+        "entered",
+        "laneDensity"
+      ],
+      [
+        "condition",
+        "laneDensity"
+      ],
+      [
+        "entered",
+        "sampledSeconds"
+      ],
+      [
+        "edge",
+        "lane"
+      ],
+      [
+        "end",
+        "sampledSeconds"
+      ],
+      [
+        "laneChangedTo",
+        "laneDensity"
+      ],
+      [
+        "density",
+        "laneDensity"
+      ],
+      [
+        "laneChangedTo",
+        "sampledSeconds"
+      ],
+      [
+        "sampledSeconds",
+        "waitingTime"
+      ],
+      [
+        "density",
+        "edge"
+      ],
+      [
+        "laneDensity",
+        "teleported"
+      ],
+      [
+        "departed",
+        "laneDensity"
+      ],
+      [
+        "departed",
+        "sampledSeconds"
+      ],
+      [
+        "speedRelative",
+        "timeLoss"
+      ],
+      [
+        "density",
+        "occupancy"
+      ],
+      [
+        "laneChangedFrom",
+        "laneDensity"
+      ],
+      [
+        "speed",
+        "timeLoss"
+      ],
+      [
+        "left",
+        "sampledSeconds"
+      ],
+      [
+        "begin",
+        "sampledSeconds"
+      ],
+      [
+        "speed",
+        "traveltime"
+      ],
+      [
+        "laneChangedFrom",
+        "sampledSeconds"
+      ],
+      [
+        "laneDensity",
+        "vaporized"
+      ],
+      [
+        "lane",
+        "laneDensity"
+      ],
+      [
+        "density",
+        "speed"
+      ],
+      [
+        "occupancy",
+        "speed"
+      ],
+      [
+        "edge",
+        "occupancy"
+      ],
+      [
+        "sampledSeconds",
+        "timeLoss"
+      ],
+      [
+        "density",
+        "lane"
+      ],
+      [
+        "speed",
+        "waitingTime"
+      ]
+    ],
+    "count": 33,
+    "create_time": 1757559125,
+    "update_time": 1757559125,
+    "_id": "doc-db8e99d8bf2a91d51e9b79e119cb6f03"
+  }
+}

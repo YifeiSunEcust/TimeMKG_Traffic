@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="begin">
+      <data key="d0">begin</data>
+      <data key="d1">Category</data>
+      <data key="d2">Begin defines the start timestamp of the data collection interval, crucial for establishing the timeframe of data.&lt;SEP&gt;Begin signifies the starting point of the measurement interval for calculating sampledSeconds.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="end">
+      <data key="d0">end</data>
+      <data key="d1">Category</data>
+      <data key="d2">End is the last time step plus a specified DELTA_T, which defines the conclusion of the data collection interval and cannot precede the start timestamp.&lt;SEP&gt;End marks the ending point of the measurement interval for calculating sampledSeconds.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="edge">
+      <data key="d0">edge</data>
+      <data key="d1">Category</data>
+      <data key="d2">Edge represents a road segment that serves as a higher spatial unit in the context of traffic data collection.&lt;SEP&gt;Edge refers to a spatial boundary where vehicle density and occupancy are measured, integral for calculations of lane and edge metrics.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="lane">
+      <data key="d0">lane</data>
+      <data key="d1">Category</data>
+      <data key="d2">Lane is defined as a single lane within a road segment, a lower spatial unit that cannot exist independently of an edge.&lt;SEP&gt;Lane refers to a defined section of roadway for vehicles, which is crucial for measuring laneDensity and occupancy.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="speed">
+      <data key="d0">speed</data>
+      <data key="d1">Category</data>
+      <data key="d2">Speed indicates the rate of vehicle movement, critical for estimating travel times and vehicle behavior on edges or lanes.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="traveltime">
+      <data key="d0">traveltime</data>
+      <data key="d1">Category</data>
+      <data key="d2">Travel time is an estimation of the time required to traverse an edge or lane based on mean speed.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="overlapTraveltime">
+      <data key="d0">overlapTraveltime</data>
+      <data key="d1">Category</data>
+      <data key="d2">Overlap travel time estimates the duration for any part of a vehicle to pass the edge or lane, influenced by vehicle length and speed.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="speedRelative">
+      <data key="d0">speedRelative</data>
+      <data key="d1">Category</data>
+      <data key="d2">Speed relative represents the ratio of mean speed to the lane speed limit, indicating how fast the vehicles are moving in relation to allowed speeds.&lt;SEP&gt;SpeedRelative measures the actual speed relative to the speed limit, affecting timeLoss based on how much lower it is than the limit.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559109</data>
+    </node>
+    <node id="laneDensity">
+      <data key="d0">laneDensity</data>
+      <data key="d1">Category</data>
+      <data key="d2">Lane density refers to the average number of vehicles in each lane, essential for understanding traffic flow and congestion.&lt;SEP&gt;LaneDensity quantifies the number of vehicles occupying a lane, influencing vehicle movement and decisions to change lanes.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559110</data>
+    </node>
+    <node id="density">
+      <data key="d0">density</data>
+      <data key="d1">Category</data>
+      <data key="d2">Density is the measurement of vehicle density on the edge based on average lane densities across all lanes.&lt;SEP&gt;Density is a quantitative measure of how many vehicles are occupying a certain area, such as a lane or edge.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="occupancy">
+      <data key="d0">occupancy</data>
+      <data key="d1">Category</data>
+      <data key="d2">Occupancy reflects the percentage of the edge or lane occupied by vehicles, impacting vehicle movement and speed.&lt;SEP&gt;Occupancy indicates the proportion of a lane or edge occupied by vehicles, important for understanding traffic flow.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="waitingTime">
+      <data key="d0">waitingTime</data>
+      <data key="d1">Category</data>
+      <data key="d2">Waiting time quantifies the total duration vehicles remain stationary due to insufficient speed.&lt;SEP&gt;WaitingTime reflects the time vehicles are halted, which can increase with higher sampledSeconds, particularly in congested conditions.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="timeLoss">
+      <data key="d0">timeLoss</data>
+      <data key="d1">Category</data>
+      <data key="d2">Time loss is the total time vehicles lose when they travel at speeds lower than desired.&lt;SEP&gt;TimeLoss represents the additional time vehicles spend traveling slower than desired, which can rise with more sampledSeconds.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="entered">
+      <data key="d0">entered</data>
+      <data key="d1">Category</data>
+      <data key="d2">Entered measures the total number of vehicles that enter the edge or lane over time.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="departed">
+      <data key="d0">departed</data>
+      <data key="d1">Category</data>
+      <data key="d2">Departed quantifies the number of vehicles that have exited the edge or lane, impacting traffic flow.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="laneChangedTo">
+      <data key="d0">laneChangedTo</data>
+      <data key="d1">Category</data>
+      <data key="d2">Lane changed to indicates the number of vehicles switching to a new lane, affecting lane density.&lt;SEP&gt;LaneChangedTo denotes the vehicles that have entered a lane, usually when its laneDensity is lower than that of adjacent lanes.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="left">
+      <data key="d0">left</data>
+      <data key="d1">Category</data>
+      <data key="d2">Left counts the number of vehicles that have exited the edge or lane downstream, further influencing traffic metrics.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559111</data>
+    </node>
+    <node id="laneChangedFrom">
+      <data key="d0">laneChangedFrom</data>
+      <data key="d1">Category</data>
+      <data key="d2">Lane changed from records the number of vehicles shifting away from a lane, which influences lane density.&lt;SEP&gt;LaneChangedFrom signifies the vehicles that have left a lane, typically due to higher laneDensity compared to adjacent lanes.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559112</data>
+    </node>
+    <node id="vaporized">
+      <data key="d0">vaporized</data>
+      <data key="d1">Category</data>
+      <data key="d2">Vaporized represents the number of vehicles removed from the edge, impacting overall vehicle counts.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559112</data>
+    </node>
+    <node id="teleported">
+      <data key="d0">teleported</data>
+      <data key="d1">Category</data>
+      <data key="d2">Teleported measures the number of vehicles relocated from the edge, crucial for understanding shifts in traffic.&lt;SEP&gt;Teleported indicates the number of vehicles that have been relocated from a lane, impacting laneDensity by reducing the number of vehicles present.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559112</data>
+    </node>
+    <node id="DELTA_T">
+      <data key="d0">DELTA_T</data>
+      <data key="d1">Other</data>
+      <data key="d2">DELTA_T refers to a specified duration added to the last time step to determine the end timestamp in the context of data collection intervals.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559112</data>
+    </node>
+    <node id="speedThreshold">
+      <data key="d0">speedThreshold</data>
+      <data key="d1">Other</data>
+      <data key="d2">Speed threshold indicates a specific speed level below which vehicles are considered to be halted, impacting waiting time.</data>
+      <data key="d3">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559112</data>
+    </node>
+    <node id="sampledSeconds">
+      <data key="d0">sampledSeconds</data>
+      <data key="d1">Category</data>
+      <data key="d2">SampledSeconds quantifies the total vehicle-seconds representing how long vehicles are present in a lane or at the edge.</data>
+      <data key="d3">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559112</data>
+    </node>
+    <node id="condition">
+      <data key="d0">condition</data>
+      <data key="d1">Other</data>
+      <data key="d2">Condition describes the current state of traffic in relation to factors like vehicle speed, laneDensity, or congestion.</data>
+      <data key="d3">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1757559112</data>
+    </node>
+    <edge source="begin" target="end">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship indicates that 'end' is contingent upon 'begin', establishing the timeframe for data collection.</data>
+      <data key="d8">sequence,timestamp relationship</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559113</data>
+    </edge>
+    <edge source="begin" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">Begin signifies the starting reference for summing sampledSeconds over the measurement interval.</data>
+      <data key="d8">calculation start,measurement interval</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559120</data>
+    </edge>
+    <edge source="end" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">End signifies the endpoint for summing sampledSeconds, establishing the measurement duration.</data>
+      <data key="d8">calculation end,measurement interval</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559120</data>
+    </edge>
+    <edge source="edge" target="lane">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship shows that a 'lane' is a subdivision of an 'edge', dependent on its existence.</data>
+      <data key="d8">hierarchical structure,spatial relationship</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559113</data>
+    </edge>
+    <edge source="edge" target="density">
+      <data key="d6">1.0</data>
+      <data key="d7">The edge defines the spatial scope for calculating density, making it essential for density measurements.</data>
+      <data key="d8">measurement scope,prerequisite</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559118</data>
+    </edge>
+    <edge source="edge" target="occupancy">
+      <data key="d6">1.0</data>
+      <data key="d7">The edge defines where occupancy is measured, crucial for understanding total vehicle presence.</data>
+      <data key="d8">measurement scope,prerequisite</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559119</data>
+    </edge>
+    <edge source="lane" target="laneDensity">
+      <data key="d6">1.0</data>
+      <data key="d7">The lane provides the spatial framework for determining laneDensity, necessary for accurate calculations.</data>
+      <data key="d8">measurement scope,prerequisite</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559123</data>
+    </edge>
+    <edge source="lane" target="occupancy">
+      <data key="d6">1.0</data>
+      <data key="d7">The lane serves as the spatial reference for measuring lane-level occupancy.</data>
+      <data key="d8">measurement scope,prerequisite</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559123</data>
+    </edge>
+    <edge source="lane" target="density">
+      <data key="d6">1.0</data>
+      <data key="d7">Density is directly related to the lane, showing how vehicle distribution varies across different lanes.</data>
+      <data key="d8">spatial relation,vehicle distribution</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559125</data>
+    </edge>
+    <edge source="speed" target="traveltime">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship defines how 'speed' affects 'traveltime', with higher speeds leading to shorter travel times.</data>
+      <data key="d8">impact relationship,time estimation</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559113</data>
+    </edge>
+    <edge source="speed" target="overlapTraveltime">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship illustrates that 'speed' directly influences 'overlapTraveltime', with variations in speed affecting passage duration.</data>
+      <data key="d8">estimation,impact relationship</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559114</data>
+    </edge>
+    <edge source="speed" target="occupancy">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship explains that higher 'occupancy' reduces 'speed' due to limited space for vehicles.</data>
+      <data key="d8">inverse relationship,space correlation</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559115</data>
+    </edge>
+    <edge source="speed" target="waitingTime">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship states that a lower 'speed' equates to higher 'waitingTime', as vehicles remain halted longer.</data>
+      <data key="d8">causal relationship,vehicle halting</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559115</data>
+    </edge>
+    <edge source="speed" target="timeLoss">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship indicates that slower speeds lead to greater 'timeLoss' due to discrepancies between actual and desired travel times.</data>
+      <data key="d8">inverse relationship,travel gap</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559116</data>
+    </edge>
+    <edge source="speed" target="density">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship shows that increased 'density' results in more vehicle interactions, lowering 'speed'.</data>
+      <data key="d8">inverse relationship,vehicle interactions</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559117</data>
+    </edge>
+    <edge source="speedRelative" target="timeLoss">
+      <data key="d6">1.0</data>
+      <data key="d7">Lower speedRelative leads to a larger gap between actual and desired travel time, increasing timeLoss.</data>
+      <data key="d8">speed ratio impact,travel efficiency</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559118</data>
+    </edge>
+    <edge source="laneDensity" target="density">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship indicates that 'density' is derived from the average of 'laneDensity' values, summarizing vehicle density across lanes.</data>
+      <data key="d8">average calculation,basis</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559113</data>
+    </edge>
+    <edge source="laneDensity" target="departed">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship shows that an increase in 'departed' raises 'laneDensity' in the lane.</data>
+      <data key="d8">direct relationship,vehicle density</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559116</data>
+    </edge>
+    <edge source="laneDensity" target="laneChangedTo">
+      <data key="d6">2.0</data>
+      <data key="d7">The relationship denotes that vehicles 'laneChangedTo' increase 'laneDensity' in the target lane.&lt;SEP&gt;Lower laneDensity in a target lane increases the likelihood of vehicles changing into that lane, raising laneChangedTo.</data>
+      <data key="d8">adjacent influence,density-to-change,direct relationship,vehicle density</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559117</data>
+    </edge>
+    <edge source="laneDensity" target="entered">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship indicates that more vehicles 'entered', raising the 'laneDensity' in the lane.</data>
+      <data key="d8">direct relationship,vehicle density</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559118</data>
+    </edge>
+    <edge source="laneDensity" target="left">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship clarifies that a higher number of 'left' vehicles reduces 'laneDensity'.</data>
+      <data key="d8">inverse relationship,vehicle density</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559119</data>
+    </edge>
+    <edge source="laneDensity" target="vaporized">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship shows that more 'vaporized' vehicles lowers 'laneDensity'.</data>
+      <data key="d8">inverse relationship,vehicle density</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559120</data>
+    </edge>
+    <edge source="laneDensity" target="teleported">
+      <data key="d6">2.0</data>
+      <data key="d7">The relationship describes that more vehicles 'teleported' decrease 'laneDensity' in the lane.&lt;SEP&gt;The higher the number of vehicles teleported from a lane, the lower the laneDensity becomes.</data>
+      <data key="d8">density impact,inverse relationship,vehicle density,vehicle movement</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559121</data>
+    </edge>
+    <edge source="laneDensity" target="laneChangedFrom">
+      <data key="d6">2.0</data>
+      <data key="d7">The relationship states that vehicles 'laneChangedFrom' reduces 'laneDensity' in the corresponding lane.&lt;SEP&gt;Higher laneDensity in a target lane increases the likelihood of vehicles changing away from that lane, raising laneChangedFrom.</data>
+      <data key="d8">adjacent influence,density-to-change,inverse relationship,vehicle density</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9&lt;SEP&gt;chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559121</data>
+    </edge>
+    <edge source="laneDensity" target="condition">
+      <data key="d6">1.0</data>
+      <data key="d7">Condition can influence laneDensity, as various factors impact the number of vehicles in a lane at any given time.</data>
+      <data key="d8">performance indicator,traffic state</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559123</data>
+    </edge>
+    <edge source="density" target="occupancy">
+      <data key="d6">1.0</data>
+      <data key="d7">Density is a key factor that influences occupancy measurements, as it indicates how many vehicles occupy a given area.</data>
+      <data key="d8">evaluation factor,space utilization</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559120</data>
+    </edge>
+    <edge source="waitingTime" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">An increase in sampledSeconds raises the probability that vehicles will be halted, thus increasing waitingTime.</data>
+      <data key="d8">congestion effect,duration correlation</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559118</data>
+    </edge>
+    <edge source="timeLoss" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">Higher sampledSeconds correlates to increased timeLoss as more vehicles drive slower than desired.</data>
+      <data key="d8">duration correlation,travel delay</data>
+      <data key="d9">chunk-89198bf2d8c4f9fd9fb06db392218f90</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559119</data>
+    </edge>
+    <edge source="entered" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship shows that more vehicles 'entered' increases the number counted in 'sampledSeconds' each second.</data>
+      <data key="d8">causal relationship,vehicle presence</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559114</data>
+    </edge>
+    <edge source="departed" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship indicates that a higher 'departed' count results in fewer vehicles recorded in 'sampledSeconds'.</data>
+      <data key="d8">causal relationship,vehicle presence</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559115</data>
+    </edge>
+    <edge source="laneChangedTo" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship illustrates that an increase in 'laneChangedTo' leads to greater numbers in 'sampledSeconds'.</data>
+      <data key="d8">causal relationship,vehicle presence</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559115</data>
+    </edge>
+    <edge source="left" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship clarifies that more vehicles 'left' leads to a decrease in 'sampledSeconds'.</data>
+      <data key="d8">causal relationship,vehicle presence</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559116</data>
+    </edge>
+    <edge source="laneChangedFrom" target="sampledSeconds">
+      <data key="d6">1.0</data>
+      <data key="d7">The relationship shows that a higher number of 'laneChangedFrom' reduces 'sampledSeconds'.</data>
+      <data key="d8">causal relationship,vehicle presence</data>
+      <data key="d9">chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1757559117</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,20 @@
+{
+  "doc-db8e99d8bf2a91d51e9b79e119cb6f03": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-d7ba0e477f500c4cd9d5e4d1db90bdf9",
+      "chunk-89198bf2d8c4f9fd9fb06db392218f90"
+    ],
+    "content_summary": "begin→end: begin defines the start timestamp of the data collection interval, and end (last time step + DELTA_T) is the end timestamp of the same interval; end cannot be earlier than begin, so begin is a prerequisite for determining end.\nedge→lane: e...",
+    "content_length": 8018,
+    "created_at": "2025-09-11T02:51:19.606967+00:00",
+    "updated_at": "2025-09-11T02:52:05.680503+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20250911_105119_b2452d40",
+    "metadata": {
+      "processing_start_time": 1757559079,
+      "processing_end_time": 1757559125
+    }
+  }
+}
